@@ -35,7 +35,7 @@
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-xl-2 col-lg-3 col-md-12">
-				<a href="http://bootstrap-ecommerce.com" class="brand-wrap">
+				<a href="/" class="brand-wrap">
 					<img class="logo" src="/images/logo.png">
 				</a> <!-- brand-wrap.// -->
 			</div>
@@ -114,40 +114,11 @@
           <div class="dropdown-menu">
             			  
 			<% categories.forEach( category => { %>
-				<a class="dropdown-item" href="#"><%- category.category %></a>
+				<a class="dropdown-item" href="/categoria/<%- category.id %>/<%- category.slug %>"><%- category.category %></a>
 			<% }) %>
           </div>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Demo pages</a>
-          <div class="dropdown-menu">
-			<a class="dropdown-item" href="/page-index.html">Main</a>
-			<a class="dropdown-item" href="/page-category.html">All category</a>
-			<a class="dropdown-item" href="/page-listing-large.html">Listing list</a>
-			<a class="dropdown-item" href="/page-listing-grid.html">Listing grid</a>
-			<a class="dropdown-item" href="/page-shopping-cart.html">Shopping cart</a>
-			<a class="dropdown-item" href="/page-detail-product.html">Item detail</a>
-			<a class="dropdown-item" href="/page-content.html">Info content</a>
-			<a class="dropdown-item" href="/page-user-login.html">Page login</a>
-			<a class="dropdown-item" href="/page-user-register.html">Page register</a>
-			<a class="dropdown-item disabled text-muted" href="#">More components</a>
-          </div>
-        </li>
       </ul>
-      <ul class="navbar-nav ml-md-auto">
-      	  <li class="nav-item">
-            <a class="nav-link" href="#">Get the app</a>
-          </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="http://example.com" data-toggle="dropdown">English</a>
-	        <div class="dropdown-menu dropdown-menu-right">
-	          <a class="dropdown-item" href="#">Russian</a>
-	          <a class="dropdown-item" href="#">French</a>
-	          <a class="dropdown-item" href="#">Spanish</a>
-	          <a class="dropdown-item" href="#">Chinese</a>
-	        </div>
-	      </li>
-	   </ul>
     </div> <!-- collapse .// -->
   </div> <!-- container .// -->
 </nav>
